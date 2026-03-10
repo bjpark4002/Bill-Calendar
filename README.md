@@ -248,3 +248,114 @@ This Privacy Policy is based on the current Payoff Calendar implementation and p
 - backend token exchange and recurring-subscription retrieval;
 - ad delivery through Google AdMob; and
 - consent handling through Google's User Messaging Platform.
+
+
+
+# ACCESS CONTROL POLICY
+
+# Payoff Calendar Access Control Policy
+
+Effective Date: March 10, 2026
+
+This Access Control Policy describes how access to Payoff Calendar production assets, secrets, and sensitive data is limited and reviewed.
+
+## 1. Scope
+
+This policy applies to:
+
+- the Payoff Calendar iOS app release pipeline;
+- source code repositories;
+- App Store Connect and Apple Developer resources;
+- Plaid dashboard, Plaid backend environment variables, and related secrets;
+- advertising or monetization dashboards used for the app;
+- hosting or infrastructure used to support production services; and
+- any device or account that can access production credentials or user-sensitive data.
+
+## 2. Access Control Principles
+
+Payoff Calendar follows these baseline access control principles:
+
+- least-privilege access;
+- named-account access only;
+- production access granted only when needed for app operation, release, support, or security;
+- secrets must not be embedded in public code or shared casually;
+- access should be removed or rotated when it is no longer needed.
+
+## 3. Production Access Restrictions
+
+Access to production assets and sensitive data is limited as follows:
+
+- access is restricted to authorized personnel only;
+- production credentials are limited to accounts controlled by the app owner or explicitly authorized operators;
+- access to production systems is not granted to anonymous, shared-public, or unnecessary accounts;
+- access to sensitive financial integration secrets, including Plaid credentials, is limited to backend configuration and authorized operators only; and
+- direct access to locally stored user data is limited to the device holder and any authorized operator with access to that device.
+
+## 4. Sensitive Data Covered
+
+Sensitive data for this app includes:
+
+- Plaid access tokens, link tokens, public-token exchange outputs, and other financial integration secrets;
+- recurring transaction-derived subscription data;
+- locally stored bill, payment, and subscription records;
+- backend environment variables and API secrets;
+- App Store and release credentials; and
+- advertising and monetization account access.
+
+## 5. Access Review Process
+
+Access reviews are performed periodically using a simple manual review process.
+
+At least once per calendar quarter, the app owner reviews:
+
+- who has access to source code repositories;
+- who has access to App Store Connect and Apple Developer resources;
+- who has access to Plaid dashboard and backend credentials;
+- who has access to hosting, logs, and production secrets; and
+- whether any shared, stale, or unnecessary credentials should be removed or rotated.
+
+The review should result in one of the following actions:
+
+- keep current access unchanged;
+- remove unnecessary access;
+- rotate secrets or passwords; or
+- document any temporary exceptions and their end date.
+
+## 6. Authentication Expectations
+
+Where supported by the service provider, strong authentication should be enabled for production-related accounts, especially:
+
+- Apple Developer and App Store Connect;
+- source code hosting;
+- Plaid dashboard;
+- hosting platforms; and
+- primary business email accounts used for password recovery or administrative access.
+
+## 7. Devices and Physical Access
+
+Production access may be performed only from devices that are reasonably secured, including:
+
+- passcode or password protection;
+- automatic screen lock;
+- full-disk encryption where supported; and
+- up-to-date operating system and security patches where reasonably practical.
+
+Physical access to production-capable devices is limited to the device owner and authorized users.
+
+## 8. Exceptions
+
+Any exception to this policy should be time-limited and documented by the app owner.
+
+## 9. Current Control Summary
+
+Based on the current Payoff Calendar setup, this policy is intended to support the following defensible statements:
+
+- a defined and documented access control policy is in place; and
+- periodic access reviews are performed through the documented quarterly review process.
+
+This policy does not claim that Payoff Calendar currently operates:
+
+- centralized identity and access management;
+- enterprise zero-trust architecture; or
+- automated de-provisioning for terminated or transferred employees.
+
